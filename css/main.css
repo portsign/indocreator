@@ -936,3 +936,11 @@ ul.nostyle i {
   box-shadow: none;
   -webkit-box-shadow: none;
 }
+
+.col-3-form {
+  width:300px;
+}
+input.btn.btn-primary.btn-subscribe {
+  margin-top: 10px!important;
+  width: 300px;
+}
