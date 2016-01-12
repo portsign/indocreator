@@ -1,0 +1,12 @@
+ErrorDocument 404/ /404.shtml
+RewriteEngine on
+Options All -Indexes
+RewriteRule ^404/?$ 404.php [L]
+RewriteRule ^harga/?$ regone.php [L]
+RewriteRule ^desain/?$ disene.php [L]
+RewriteRule ^contact/?$ kontakyo.php [L]
+RewriteRule ^article/?$ artikele.php [L]
+RewriteRule ^caraorder/?$ carapesen.php [L]
+RewriteRule ^tos/?$ tos_132R13.php [L]
+RewriteRule ^download/?$ download_15263R1.php [L]
+RewriteRule ^faq/?$ faq_8236uj3.php [L]

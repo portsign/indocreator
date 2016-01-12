@@ -9,7 +9,7 @@ include('slider.php'); ?>
             <div class="row">
                 <div class="col-sm-9">
                     <h2>Kenapa Memilih Kami?</h2>
-                    <p>Kami memiliki pengalaman 5 tahun dalam membuat website yang dinamis, elegan serta user friendly dan mudah untuk anda kelola. website merupakan sarana untuk menjual produk dan jasa, berinteraksi dengan calon customer, Sebagai media perkenalkan profil perusahaan dan masih banyak sekali keuntungan dalam memiliki sebuah website. oleh karena itu kami akan membantu anda dalam mewujudkan impian anda.
+                    <p>Kami memiliki pengalaman 5 tahun lebih dalam membuat website yang dinamis, elegan serta user friendly dan mudah untuk anda kelola. Kami mengutamakan keamanan pada website anda. website merupakan sarana untuk menjual produk dan jasa, berinteraksi dengan calon customer, Sebagai media perkenalkan profil perusahaan dan masih banyak sekali keuntungan dalam memiliki sebuah website. oleh karena itu kami akan membantu anda dalam mewujudkan impian anda.
                     </p>
                     <h4>Please Subscribe</h4>
                     <form action="" method="">
