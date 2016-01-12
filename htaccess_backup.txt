@@ -9,4 +9,7 @@ RewriteRule ^article/?$ artikele.php [L]
 RewriteRule ^caraorder/?$ carapesen.php [L]
 RewriteRule ^tos/?$ tos_132R13.php [L]
 RewriteRule ^download/?$ download_15263R1.php [L]
-RewriteRule ^faq/?$ faq_8236uj3.php [L]
+RewriteRule ^faq/?$ faq_8236uj3.php [L] 
+
+RewriteRule ^order/?$ order.php [L] 
+RewriteRule ^order/([A-Za-z0-9_-]+)/([A-Za-z0-9_-]+)?$ order.php?type=$1&id=$2 [L] 

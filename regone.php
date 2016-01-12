@@ -312,7 +312,7 @@ include('navbar.php'); ?>
                                 </div>
 
                                 <div class="plan-name">
-                                    <h3>Business</h3>
+                                    <h3>Jurnalis</h3>
                                 </div>
                             </li>
                             <li><strong>1</strong> DOMAIN .com/.net/.co.id</li>

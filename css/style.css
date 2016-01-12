@@ -1,0 +1,12 @@
+.embed-responsive-item {
+	height: 200px!important;
+	border: 1px solid #CCC!important;
+	border-radius: 4px;
+}
+.embed-responsive.embed-responsive-4by3 {
+	padding-bottom: 19%;
+}
+.big-checkbox {
+	width: 30px; 
+	height: 30px;
+}

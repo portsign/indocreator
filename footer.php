@@ -22,16 +22,16 @@
         </div>
     </footer><!--/#footer-->
 
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="<?php echo $baseUrl; ?>js/jquery.js"></script>
+    <script src="<?php echo $baseUrl; ?>js/bootstrap.min.js"></script>
     <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/mousescroll.js"></script>
-    <script src="js/smoothscroll.js"></script>
-    <script src="js/jquery.prettyPhoto.js"></script>
-    <script src="js/jquery.isotope.min.js"></script>
-    <script src="js/jquery.inview.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="<?php echo $baseUrl; ?>js/owl.carousel.min.js"></script>
+    <script src="<?php echo $baseUrl; ?>js/mousescroll.js"></script>
+    <script src="<?php echo $baseUrl; ?>js/smoothscroll.js"></script>
+    <script src="<?php echo $baseUrl; ?>js/jquery.prettyPhoto.js"></script>
+    <script src="<?php echo $baseUrl; ?>js/jquery.isotope.min.js"></script>
+    <script src="<?php echo $baseUrl; ?>js/jquery.inview.min.js"></script>
+    <script src="<?php echo $baseUrl; ?>js/wow.min.js"></script>
+    <script src="<?php echo $baseUrl; ?>js/main.js"></script>
 </body>
 </html>
