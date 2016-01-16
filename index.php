@@ -18,7 +18,7 @@ include('slider.php'); ?>
                     </form>
                 </div>
                 <div class="col-sm-3 text-right">
-                    <a class="btn btn-primary btn-lg" href="#">Lihat Harga!</a>
+                    <a class="btn btn-primary btn-lg" href="<?php echo $baseUrl; ?>harga">Lihat Harga!</a>
                 </div>
             </div>
         </div>
