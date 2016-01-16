@@ -14,6 +14,7 @@ if (isset($_POST['isiform']))
     $_SESSION['kepentingan'] = $_POST['kepentingan'];
     $_SESSION['jenisweb'] = $_POST['jenisweb'];
     $_SESSION['setuju'] = $_POST['setuju'];
+    $_SESSION['harga'] = $_POST['harga'];
 
     $session_id = $_POST['session_id'];
     $nama = $_POST['nama'];
@@ -35,7 +36,7 @@ if (isset($_POST['isiform']))
         
     	// mysqli_query($connecDB, "INSERT INTO ");
 
-        echo 'Oke Lanjut';
+        header('Location: ../template/'.$uri_1.'/'.$uri_2.'');
 
     } else if ($_POST['setuju']=='') {
 

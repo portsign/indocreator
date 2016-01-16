@@ -11,6 +11,116 @@ session_start();
     <div class="container">
         <br /><br />
         <div class="section-header">
+
+        <?php 
+        if (isset($_GET['type'])) {
+            if ($_GET['type']=='os') {
+                $tipe = 'Online Shop';
+            }
+            if ($_GET['type']=='cp') {
+                $tipe = 'Profil Perusahaan (Company Profile)';
+            }
+            if ($_GET['type']=='pb') {
+                $tipe = 'Situs Berita / Portal Berita';
+            }
+            if ($_GET['type']=='ib') {
+                $tipe = 'Iklan Baris';
+            }
+        }
+
+        if (isset($_GET['type']) && isset($_GET['id'])) {
+            // COMPANY PROFILE
+            if ($_GET['type']=='cp' && $_GET['id']=='1') {
+                $harga = 'Rp 1.2jt';
+                $harga_int = 1200000;
+                $jenis = 'Standard';
+            }
+            if ($_GET['type']=='cp' && $_GET['id']=='2') {
+                $harga = 'Rp 2.5jt';
+                $harga_int = 2500000;
+                $jenis = 'Business';
+            }
+            if ($_GET['type']=='cp' && $_GET['id']=='3') {
+                $harga = 'Rp 4jt';
+                $harga_int = 4000000;
+                $jenis = 'Pro';
+            }
+            if ($_GET['type']=='cp' && $_GET['id']=='4') {
+                $harga = 'Rp 7jt';
+                $harga_int = 7000000;
+                $jenis = 'Ultra';
+            }
+            // TOKO ONLINE
+            if ($_GET['type']=='os' && $_GET['id']=='1') {
+                $harga = 'Rp 2.2jt';
+                $harga_int = 2200000;
+                $jenis = 'Standard';
+            }
+            if ($_GET['type']=='os' && $_GET['id']=='2') {
+                $harga = 'Rp 3.2jt';
+                $harga_int = 3200000;
+                $jenis = 'Business';
+            }
+            if ($_GET['type']=='os' && $_GET['id']=='3') {
+                $harga = 'Rp 5jt';
+                $harga_int = 5000000;
+                $jenis = 'Pro';
+            }
+            if ($_GET['type']=='os' && $_GET['id']=='4') {
+                $harga = 'Rp 8jt';
+                $harga_int = 8000000;
+                $jenis = 'Ultra';
+            }
+            // BERITA / NEWS
+            if ($_GET['type']=='pb' && $_GET['id']=='1') {
+                $harga = 'Rp 2.2jt';
+                $harga_int = 2200000;
+                $jenis = 'Standard';
+            }
+            if ($_GET['type']=='pb' && $_GET['id']=='2') {
+                $harga = 'Rp 3.2jt';
+                $harga_int = 3200000;
+                $jenis = 'Jurnalis';
+            }
+            if ($_GET['type']=='pb' && $_GET['id']=='3') {
+                $harga = 'Rp 4.5jt';
+                $harga_int = 4500000;
+                $jenis = 'Pro';
+            }
+            if ($_GET['type']=='pb' && $_GET['id']=='4') {
+                $harga = 'Rp 7jt';
+                $harga_int = 7000000;
+                $jenis = 'Ultra';
+            }
+            //IKLAN BARIS
+            if ($_GET['type']=='ib' && $_GET['id']=='1') {
+                $harga = 'Rp 4.2jt';
+                $harga_int = 4200000;
+                $jenis = 'Standard';
+            }
+            if ($_GET['type']=='ib' && $_GET['id']=='2') {
+                $harga = 'Rp 7.2jt';
+                $harga_int = 7200000;
+                $jenis = 'Business';
+            }
+            if ($_GET['type']=='ib' && $_GET['id']=='3') {
+                $harga = 'Rp 13jt';
+                $harga_int = 13000000;
+                $jenis = 'Pro';
+            }
+            if ($_GET['type']=='ib' && $_GET['id']=='4') {
+                $harga = 'Rp 20jt';
+                $harga_int = 20000000;
+                $jenis = 'Ultra';
+            }
+
+        }
+        ?>
+            <div style="padding:12px; border:1px solid #dfdfdf; width:300px;">
+                <h3 class="h3-cart"><i class="glyphicon glyphicon-shopping-cart"></i> <?php echo $harga; ?> 
+                <br /><i><small><?php echo $tipe; ?> <strong><?php echo $jenis; ?></strong></small></i></h3>
+            </div>
+
             <h2 class="section-title text-center wow fadeInDown">Formulir Pemesanan</h2>
             <p class="wow text-center fadeInDown">Untuk melakukan pemesana kepada kami, silahkan anda masukkan data lengkap anda pada Formulir Online di bawah ini. <br /> Untuk detail panduan cara pemesanan bisa dilihat <a href="<?php echo $baseUrl; ?>caraorder">disini</a></p>
             <br />
@@ -21,6 +131,7 @@ session_start();
             <form action="<?php echo $baseUrl."record"; ?>" method="POST">
                 <div class="row">
                     <input type="hidden" name="session_id" value="<?php echo session_id(); ?>">
+                    <input type="hidden" name="harga" value="<?php echo $harga_int; ?>">
                     <input type="hidden" name="uri_1" value="<?php echo $_GET['type']; ?>">
                     <input type="hidden" name="uri_2" value="<?php echo $_GET['id']; ?>">
                     <div class="col-md-6">

@@ -403,7 +403,7 @@ include('navbar.php'); ?>
                             <li class="plan-header">
                                 <div class="price-duration">
                                     <span class="price">
-                                        Rp2.2jt
+                                        Rp4.2jt
                                     </span>
                                     <span class="duration">
                                         per tahun
@@ -414,14 +414,15 @@ include('navbar.php'); ?>
                                     <h3>Standar</h3>
                                 </div>
                             </li>
+                            <li>PREMIUM TEMPLATE</li>
                             <li><strong>1</strong> DOMAIN .com/.net/.co.id</li>
-                            <li><strong>1 GB</strong> DISK SPACE</li>
+                            <li><strong>2 GB</strong> DISK SPACE</li>
                             <li><strong>TUTORIAL</strong> EDIT</li>
                             <li><strong>UNLIMITED</strong> BANDWIDTH</li>
                             <li><strong>EMAIL ACCOUNT</strong> : YA</li>
                             <li><strong>GARANSI RUSAK / HACK</strong> : YA</li>
                             <li>KAPASITAS DAPAT DI UPGRADE</li>
-                            <li><strong>PERPANJANG</strong> Rp 1.5jt / tahun</li>
+                            <li><strong>PERPANJANG</strong> Rp 2.5jt / tahun</li>
                             <li><strong>24/7</strong> SUPPORT</li>
                             <li class="plan-purchase"><a class="btn btn-primary" href="<?php echo $baseUrl; ?>order/ib/1">ORDER NOW</a></li>
                         </ul>
@@ -433,7 +434,7 @@ include('navbar.php'); ?>
                             <li class="plan-header">
                                 <div class="price-duration">
                                     <span class="price">
-                                        Rp3.2jt
+                                        Rp7.2jt
                                     </span>
                                     <span class="duration">
                                         per tahun
@@ -444,14 +445,16 @@ include('navbar.php'); ?>
                                     <h3>Business</h3>
                                 </div>
                             </li>
+                            <li>PREMIUM TEMPLATE</li>
+                            <li>SEO</li>
                             <li><strong>1</strong> DOMAIN .com/.net/.co.id</li>
-                            <li><strong>2 GB</strong> DISK SPACE</li>
+                            <li><strong>4 GB</strong> DISK SPACE</li>
                             <li><strong>TUTORIAL</strong> EDIT</li>
                             <li><strong>UNLIMITED</strong> BANDWIDTH</li>
                             <li><strong>EMAIL ACCOUNT</strong> : YA</li>
                             <li><strong>GARANSI RUSAK / HACK</strong> : YA</li>
                             <li>KAPASITAS DAPAT DI UPGRADE</li>
-                            <li><strong>PERPANJANG</strong> Rp 2.5jt / tahun</li>
+                            <li><strong>PERPANJANG</strong> Rp 4.5jt / tahun</li>
                             <li><strong>24/7</strong> SUPPORT</li>
                             <li class="plan-purchase"><a class="btn btn-primary" href="<?php echo $baseUrl; ?>order/ib/2">ORDER NOW</a></li>
                         </ul>
@@ -463,7 +466,7 @@ include('navbar.php'); ?>
                             <li class="plan-header">
                                 <div class="price-duration">
                                     <span class="price">
-                                        Rp4.5jt
+                                        Rp13jt
                                     </span>
                                     <span class="duration">
                                         per tahun
@@ -474,14 +477,16 @@ include('navbar.php'); ?>
                                     <h3>Pro</h3>
                                 </div>
                             </li>
+                            <li>PREMIUM TEMPLATE</li>
+                            <li>SEO</li>
                             <li><strong>1</strong> DOMAIN .com/.net/.co.id</li>
-                            <li><strong><font color="#2ECC71">4 GB</font></strong> DISK SPACE</li>
+                            <li>UNLIMITED</li>
                             <li><strong>TUTORIAL</strong> EDIT</li>
                             <li><strong>UNLIMITED</strong> BANDWIDTH</li>
                             <li><strong>EMAIL ACCOUNT</strong> : YA</li>
                             <li><strong>GARANSI RUSAK / HACK</strong> : YA</li>
                             <li>KAPASITAS DAPAT DI UPGRADE</li>
-                            <li><strong>PERPANJANG</strong> Rp 2.5jt / tahun</li>
+                            <li><strong>PERPANJANG</strong> Rp 7jt / tahun</li>
                             <li><strong>24/7</strong> SUPPORT</li>
                             <li class="plan-purchase"><a class="btn btn-primary" href="<?php echo $baseUrl; ?>order/ib/3">ORDER NOW</a></li>
                         </ul>
@@ -493,7 +498,7 @@ include('navbar.php'); ?>
                             <li class="plan-header">
                                 <div class="price-duration">
                                     <span class="price">
-                                        Rp7.5jt
+                                        Rp20jt
                                     </span>
                                     <span class="duration">
                                         per tahun
@@ -504,14 +509,16 @@ include('navbar.php'); ?>
                                     <h3>Ultra (<font color="#2ECC71"><i class="fa fa-lock"></i> SSL</font>)</h3>
                                 </div>
                             </li>
+                            <li>PREMIUM TEMPLATE</li>
+                            <li>SEO + SMO</li>
                             <li><strong><font color="#2ECC71">4</font></strong> DOMAIN .com/.net/.co.id</li>
-                            <li><strong><font color="#2ECC71">UNLIMITED</font></strong> DISK SPACE</li>
+                            <li>UNLIMITED</li>
                             <li><strong>TUTORIAL</strong> EDIT</li>
                             <li><strong><font color="#2ECC71">UNLIMITED</font></strong> BANDWIDTH</li>
                             <li><strong>EMAIL ACCOUNT</strong> : YA</li>
                             <li><strong>GARANSI RUSAK / HACK</strong> : YA</li>
                             <li>KAPASITAS DAPAT DI UPGRADE</li>
-                            <li><strong>PERPANJANG</strong> Rp 5jt / tahun</li>
+                            <li><strong>PERPANJANG</strong> Rp 11jt / tahun</li>
                             <li><strong>24/7</strong> SUPPORT</li>
                             <li class="plan-purchase"><a class="btn btn-primary" href="<?php echo $baseUrl; ?>order/ib/4">ORDER NOW</a></li>
                         </ul>

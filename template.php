@@ -3,6 +3,17 @@ include('header.php');
 include('navbar.php'); 
 session_start();
 
+if (empty($_SESSION['nama']) &&
+empty($_SESSION['email']) &&
+empty($_SESSION['alamat']) &&
+empty($_SESSION['no_telp']) &&
+empty($_SESSION['pin_bb']) &&
+empty($_SESSION['kepentingan']) &&
+empty($_SESSION['jenisweb']) &&
+empty($_SESSION['setuju'])) {
+    header('Location: '.$baseUrl.'');
+}
+
 if (isset($_GET['type'])) {
     if ($_GET['type']=='os') {
         $tipe = 'Online Shop';
@@ -31,7 +42,8 @@ if (isset($_GET['type'])) {
             <h4>Template Kategori <?php echo $tipe; ?></h4>
             <p style="margin: -10px -1px 10px;"><i>Setelah anda memilih template, anda akan menerima email berupa</i> </p><br /> 
             <p style="margin: -43px 0 10px;"><i>laporan pendaftaran Anda</i></p>
-
+            <button class="btn btn-primary">Submit</button><br /><br />
+            <div class="row">
             <div class="btn-group" data-toggle="buttons">
                 <label class="btn btn-default">
                     <input type="radio" name="quality[25]" checked="checked" value="1" /> 
@@ -69,7 +81,11 @@ if (isset($_GET['type'])) {
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;">Lihat Detail</button>
                 </label>
             </div>
-            
+            <br />
+            <br />
+            <center><button class="btn btn-primary btn-lg">Submit</button></center>
+
+            </div>
         </div>
 
     </div>
