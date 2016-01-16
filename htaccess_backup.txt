@@ -13,4 +13,6 @@ RewriteRule ^faq/?$ faq_8236uj3.php [L]
 
 RewriteRule ^order/?$ order.php [L] 
 RewriteRule ^order/([A-Za-z0-9_-]+)/([A-Za-z0-9_-]+)?$ order.php?type=$1&id=$2 [L] 
+rewrite ^/order/([A-Za-z0-9_-]+)/([A-Za-z0-9_-]+)/([A-Za-z0-9_-]+)/([A-Za-z0-9_-]+)?$ /order.php?type=$1&id=$2&status=$3&kind=$4 last;
+
 RewriteRule ^record/?$ Machine/rcd.php [L] 

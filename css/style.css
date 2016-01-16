@@ -10,3 +10,9 @@
 	width: 30px; 
 	height: 30px;
 }
+.small_val {
+	color: red;
+}
+.label.active {
+	border: 2px solid yellow!important;
+}

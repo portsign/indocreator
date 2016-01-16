@@ -5,11 +5,22 @@ include('Config/Database.php');
 if (isset($_POST['isiform'])) 
 {
 
+    session_start();
+    $_SESSION['nama'] = $_POST['nama'];
+    $_SESSION['email'] = $_POST['email'];
+    $_SESSION['alamat'] = $_POST['alamat'];
+    $_SESSION['no_telp'] = $_POST['no_telp'];
+    $_SESSION['pin_bb'] = $_POST['pin_bb'];
+    $_SESSION['kepentingan'] = $_POST['kepentingan'];
+    $_SESSION['jenisweb'] = $_POST['jenisweb'];
+    $_SESSION['setuju'] = $_POST['setuju'];
+
     $session_id = $_POST['session_id'];
     $nama = $_POST['nama'];
     $email = $_POST['email'];
     $alamat = $_POST['alamat'];
     $no_telp = $_POST['no_telp'];
+    $pin_bb = $_POST['pin_bb'];
     $kepentingan = $_POST['kepentingan'];
     $jenisweb = $_POST['jenisweb'];
     $setuju = $_POST['setuju'];
@@ -28,11 +39,11 @@ if (isset($_POST['isiform']))
 
     } else if ($_POST['setuju']=='') {
 
-        header('Location: ../order/'.$uri_1.'/'.$uri_2.'/false/req');
+        header('Location: ../order/'.$uri_1.'/'.$uri_2.'/false/req#requirement');
 
     } else {
 
-        header('Location: ../order/'.$uri_1.'/'.$uri_2.'/false/captcha');
+        header('Location: ../order/'.$uri_1.'/'.$uri_2.'/false/captcha#google');
     
     }
 
