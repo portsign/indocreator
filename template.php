@@ -45,41 +45,66 @@ if (isset($_GET['type'])) {
             <button class="btn btn-primary">Submit</button><br /><br />
             <div class="row">
             <div class="btn-group" data-toggle="buttons">
+
+
+            <?php 
+                if (isset($_GET['type'])) {
+                    if ($_GET['type']=='cp') {
+            ?>
+
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="1" /> 
-                    <img src="http://placehold.it/260x180" />
-                    <button class="btn btn-primary" style="position:absolute; margin-left:-95px;">Lihat Detail</button>
-                </label> 
-                <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" value="2" />
-                    <img src="http://placehold.it/260x180" />
-                    <button class="btn btn-primary" style="position:absolute; margin-left:-95px;">Lihat Detail</button>
-                </label> 
-                <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" value="3" />
-                    <img src="http://placehold.it/260x180" />
-                    <button class="btn btn-primary" style="position:absolute; margin-left:-95px;">Lihat Detail</button>
-                </label> 
-                <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" value="4" />
-                    <img src="http://placehold.it/260x180" />
-                    <button class="btn btn-primary" style="position:absolute; margin-left:-95px;">Lihat Detail</button>
-                </label> 
-                <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" value="5" />
-                    <img src="http://placehold.it/260x180" />
-                    <button class="btn btn-primary" style="position:absolute; margin-left:-95px;">Lihat Detail</button>
+                    <input type="radio" name="quality[25]" checked="checked" value="Company Profile (Torque)" /> 
+                    <img src="<?php echo $baseUrl; ?>images/portfolio/CP/Torque.jpg" width="260" />
+                    <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
+                    data-toggle="modal" data-target=".bs-example-modal-lg-cp-1">Lihat Detail</button>
                 </label>
+                <div class="modal fade bs-example-modal-lg-cp-1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content" style="padding:10px;">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <img src="<?php echo $baseUrl; ?>images/portfolio/CP/Torque.jpg" />
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" value="4" />
-                    <img src="http://placehold.it/260x180" />
-                    <button class="btn btn-primary" style="position:absolute; margin-left:-95px;">Lihat Detail</button>
-                </label> 
-                <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" value="5" />
-                    <img src="http://placehold.it/260x180" />
-                    <button class="btn btn-primary" style="position:absolute; margin-left:-95px;">Lihat Detail</button>
+                    <input type="radio" name="quality[25]" checked="checked" value="Company Profile (Acuario)" /> 
+                    <img src="<?php echo $baseUrl; ?>images/portfolio/CP/acuario.jpg" width="260" />
+                    <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
+                    data-toggle="modal" data-target=".bs-example-modal-lg-cp-2">Lihat Detail</button>
                 </label>
+                <div class="modal fade bs-example-modal-lg-cp-2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content" style="padding:10px;">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <img src="<?php echo $baseUrl; ?>images/portfolio/CP/acuario.jpg" />
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+
+                <label class="btn btn-default">
+                    <input type="radio" name="quality[25]" checked="checked" value="Company Profile (Appest)" /> 
+                    <img src="<?php echo $baseUrl; ?>images/portfolio/CP/appest.jpg" width="260" />
+                    <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
+                    data-toggle="modal" data-target=".bs-example-modal-lg-cp-3">Lihat Detail</button>
+                </label> 
+                <div class="modal fade bs-example-modal-lg-cp-3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content" style="padding:10px;">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <img src="<?php echo $baseUrl; ?>images/portfolio/CP/appest.jpg" />
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+                
+            <?php 
+                }
+            }
+            ?>
+
             </div>
             <br />
             <br />
