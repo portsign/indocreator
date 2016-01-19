@@ -16,7 +16,7 @@ empty($_SESSION['setuju'])) {
 
 if (isset($_GET['type'])) {
     if ($_GET['type']=='os') {
-        $tipe = 'Online Shop';
+        $tipe = 'Toko Online';
     }
     if ($_GET['type']=='cp') {
         $tipe = 'Profil Perusahaan (Company Profile)';
@@ -471,6 +471,442 @@ if (isset($_GET['type'])) {
 
                 
             <?php 
+                } else if ($_GET['type']=='os') {
+                ?>
+
+                <label class="btn btn-default">
+                    <input type="radio" name="quality[25]" checked="checked" value="Toko Online (E-shopper)" /> 
+                    <img src="<?php echo $baseUrl; ?>images/portfolio/OS/E_SHOPPER.png" width="260" height="165" />
+                    <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
+                    data-toggle="modal" data-target=".bs-example-modal-lg-os-1">Lihat Detail</button>
+                </label>
+                <div class="modal fade bs-example-modal-lg-os-1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content" style="padding:10px;">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <img src="<?php echo $baseUrl; ?>images/portfolio/OS/E_SHOPPER.png" />
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+
+                <label class="btn btn-default">
+                    <input type="radio" name="quality[25]" checked="checked" value="Toko Online (Amberegul)" /> 
+                    <img src="<?php echo $baseUrl; ?>images/portfolio/OS/amberegul.jpg" width="260" />
+                    <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
+                    data-toggle="modal" data-target=".bs-example-modal-lg-os-2">Lihat Detail</button>
+                </label>
+                <div class="modal fade bs-example-modal-lg-os-2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content" style="padding:10px;">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <img src="<?php echo $baseUrl; ?>images/portfolio/OS/amberegul.jpg" />
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+
+                <label class="btn btn-default">
+                    <input type="radio" name="quality[25]" checked="checked" value="Toko Online (Big Shope)" /> 
+                    <img src="<?php echo $baseUrl; ?>images/portfolio/OS/bigshope.jpg" width="260" />
+                    <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
+                    data-toggle="modal" data-target=".bs-example-modal-lg-os-3">Lihat Detail</button>
+                </label>
+                <div class="modal fade bs-example-modal-lg-os-3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content" style="padding:10px;">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <img src="<?php echo $baseUrl; ?>images/portfolio/OS/bigshope.jpg" />
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+
+                <label class="btn btn-default">
+                    <input type="radio" name="quality[25]" checked="checked" value="Toko Online (Bike Shop)" /> 
+                    <img src="<?php echo $baseUrl; ?>images/portfolio/OS/bike_shop.jpg" width="260" />
+                    <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
+                    data-toggle="modal" data-target=".bs-example-modal-lg-os-4">Lihat Detail</button>
+                </label>
+                <div class="modal fade bs-example-modal-lg-os-4" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content" style="padding:10px;">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <img src="<?php echo $baseUrl; ?>images/portfolio/OS/bike_shop.jpg" />
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+
+                <label class="btn btn-default">
+                    <input type="radio" name="quality[25]" checked="checked" value="Toko Online (Biruang)" /> 
+                    <img src="<?php echo $baseUrl; ?>images/portfolio/OS/biruang.jpg" width="260" />
+                    <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
+                    data-toggle="modal" data-target=".bs-example-modal-lg-os-5">Lihat Detail</button>
+                </label>
+                <div class="modal fade bs-example-modal-lg-os-5" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content" style="padding:10px;">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <img src="<?php echo $baseUrl; ?>images/portfolio/OS/biruang.jpg" />
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+
+                <label class="btn btn-default">
+                    <input type="radio" name="quality[25]" checked="checked" value="Toko Online (Box Shop)" /> 
+                    <img src="<?php echo $baseUrl; ?>images/portfolio/OS/box_shop.jpg" width="260" />
+                    <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
+                    data-toggle="modal" data-target=".bs-example-modal-lg-os-6">Lihat Detail</button>
+                </label>
+                <div class="modal fade bs-example-modal-lg-os-6" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content" style="padding:10px;">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <img src="<?php echo $baseUrl; ?>images/portfolio/OS/box_shop.jpg" />
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+
+                <label class="btn btn-default">
+                    <input type="radio" name="quality[25]" checked="checked" value="Toko Online (Buy Shop)" /> 
+                    <img src="<?php echo $baseUrl; ?>images/portfolio/OS/buy_shop.jpg" width="260" />
+                    <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
+                    data-toggle="modal" data-target=".bs-example-modal-lg-os-7">Lihat Detail</button>
+                </label>
+                <div class="modal fade bs-example-modal-lg-os-7" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content" style="padding:10px;">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <img src="<?php echo $baseUrl; ?>images/portfolio/OS/buy_shop.jpg" />
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+
+                <label class="btn btn-default">
+                    <input type="radio" name="quality[25]" checked="checked" value="Toko Online (E-Shop)" /> 
+                    <img src="<?php echo $baseUrl; ?>images/portfolio/OS/e-shop.jpg" width="260" />
+                    <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
+                    data-toggle="modal" data-target=".bs-example-modal-lg-os-8">Lihat Detail</button>
+                </label>
+                <div class="modal fade bs-example-modal-lg-os-8" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content" style="padding:10px;">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <img src="<?php echo $baseUrl; ?>images/portfolio/OS/e-shop.jpg" />
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+
+                <label class="btn btn-default">
+                    <input type="radio" name="quality[25]" checked="checked" value="Toko Online (Eagle Cloths)" /> 
+                    <img src="<?php echo $baseUrl; ?>images/portfolio/OS/eaglecloths.jpg" width="260" />
+                    <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
+                    data-toggle="modal" data-target=".bs-example-modal-lg-os-9">Lihat Detail</button>
+                </label>
+                <div class="modal fade bs-example-modal-lg-os-9" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content" style="padding:10px;">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <img src="<?php echo $baseUrl; ?>images/portfolio/OS/eaglecloths.jpg" />
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+
+                <label class="btn btn-default">
+                    <input type="radio" name="quality[25]" checked="checked" value="Toko Online (E-Shop UI Kit)" /> 
+                    <img src="<?php echo $baseUrl; ?>images/portfolio/OS/eshop_uikit.jpg" width="260" />
+                    <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
+                    data-toggle="modal" data-target=".bs-example-modal-lg-os-10">Lihat Detail</button>
+                </label>
+                <div class="modal fade bs-example-modal-lg-os-10" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content" style="padding:10px;">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <img src="<?php echo $baseUrl; ?>images/portfolio/OS/eshop_uikit.jpg" />
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+
+                <label class="btn btn-default">
+                    <input type="radio" name="quality[25]" checked="checked" value="Toko Online (Extro Electronics)" /> 
+                    <img src="<?php echo $baseUrl; ?>images/portfolio/OS/extro-electronics-web.jpg" width="260" height="165" />
+                    <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
+                    data-toggle="modal" data-target=".bs-example-modal-lg-os-11">Lihat Detail</button>
+                </label>
+                <div class="modal fade bs-example-modal-lg-os-11" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content" style="padding:10px;">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <img src="<?php echo $baseUrl; ?>images/portfolio/OS/extro-electronics-web.jpg" />
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+
+                <label class="btn btn-default">
+                    <input type="radio" name="quality[25]" checked="checked" value="Toko Online (Fashion Mania)" /> 
+                    <img src="<?php echo $baseUrl; ?>images/portfolio/OS/fashion_mania.jpg" width="260" />
+                    <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
+                    data-toggle="modal" data-target=".bs-example-modal-lg-os-12">Lihat Detail</button>
+                </label>
+                <div class="modal fade bs-example-modal-lg-os-12" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content" style="padding:10px;">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <img src="<?php echo $baseUrl; ?>images/portfolio/OS/fashion_mania.jpg" />
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+
+                <label class="btn btn-default">
+                    <input type="radio" name="quality[25]" checked="checked" value="Toko Online (Foose Shoes)" /> 
+                    <img src="<?php echo $baseUrl; ?>images/portfolio/OS/fooseshoes-web.jpg" width="260"  height="160" />
+                    <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
+                    data-toggle="modal" data-target=".bs-example-modal-lg-os-13">Lihat Detail</button>
+                </label>
+                <div class="modal fade bs-example-modal-lg-os-13" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content" style="padding:10px;">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <img src="<?php echo $baseUrl; ?>images/portfolio/OS/fooseshoes-web.jpg" />
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+
+                <label class="btn btn-default">
+                    <input type="radio" name="quality[25]" checked="checked" value="Toko Online (Free Style)" /> 
+                    <img src="<?php echo $baseUrl; ?>images/portfolio/OS/free_style.jpg" width="260"  height="160" />
+                    <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
+                    data-toggle="modal" data-target=".bs-example-modal-lg-os-14">Lihat Detail</button>
+                </label>
+                <div class="modal fade bs-example-modal-lg-os-14" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content" style="padding:10px;">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <img src="<?php echo $baseUrl; ?>images/portfolio/OS/free_style.jpg" />
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+
+                <label class="btn btn-default">
+                    <input type="radio" name="quality[25]" checked="checked" value="Toko Online (Gifty)" /> 
+                    <img src="<?php echo $baseUrl; ?>images/portfolio/OS/gifty.jpg" width="260"  height="160" />
+                    <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
+                    data-toggle="modal" data-target=".bs-example-modal-lg-os-15">Lihat Detail</button>
+                </label>
+                <div class="modal fade bs-example-modal-lg-os-15" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content" style="padding:10px;">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <img src="<?php echo $baseUrl; ?>images/portfolio/OS/gifty.jpg" />
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+
+                <label class="btn btn-default">
+                    <input type="radio" name="quality[25]" checked="checked" value="Toko Online (Gretong)" /> 
+                    <img src="<?php echo $baseUrl; ?>images/portfolio/OS/gretong.jpg" width="260"  height="160" />
+                    <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
+                    data-toggle="modal" data-target=".bs-example-modal-lg-os-16">Lihat Detail</button>
+                </label>
+                <div class="modal fade bs-example-modal-lg-os-16" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content" style="padding:10px;">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <img src="<?php echo $baseUrl; ?>images/portfolio/OS/gretong.jpg" />
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+
+                <label class="btn btn-default">
+                    <input type="radio" name="quality[25]" checked="checked" value="Toko Online (Home Shoppe)" /> 
+                    <img src="<?php echo $baseUrl; ?>images/portfolio/OS/home_shoppe-web1.jpg" width="260"  height="160" />
+                    <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
+                    data-toggle="modal" data-target=".bs-example-modal-lg-os-17">Lihat Detail</button>
+                </label>
+                <div class="modal fade bs-example-modal-lg-os-17" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content" style="padding:10px;">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <img src="<?php echo $baseUrl; ?>images/portfolio/OS/home_shoppe-web1.jpg" />
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+
+                <label class="btn btn-default">
+                    <input type="radio" name="quality[25]" checked="checked" value="Toko Online (Leoshop)" /> 
+                    <img src="<?php echo $baseUrl; ?>images/portfolio/OS/leoshop-web.jpg" width="260"  height="160" />
+                    <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
+                    data-toggle="modal" data-target=".bs-example-modal-lg-os-18">Lihat Detail</button>
+                </label>
+                <div class="modal fade bs-example-modal-lg-os-18" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content" style="padding:10px;">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <img src="<?php echo $baseUrl; ?>images/portfolio/OS/leoshop-web.jpg" />
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+
+                <label class="btn btn-default">
+                    <input type="radio" name="quality[25]" checked="checked" value="Toko Online (Lighting)" /> 
+                    <img src="<?php echo $baseUrl; ?>images/portfolio/OS/lighting.jpg" width="260"  height="160" />
+                    <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
+                    data-toggle="modal" data-target=".bs-example-modal-lg-os-19">Lihat Detail</button>
+                </label>
+                <div class="modal fade bs-example-modal-lg-os-19" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content" style="padding:10px;">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <img src="<?php echo $baseUrl; ?>images/portfolio/OS/lighting.jpg" />
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+
+                <label class="btn btn-default">
+                    <input type="radio" name="quality[25]" checked="checked" value="Toko Online (Lookz)" /> 
+                    <img src="<?php echo $baseUrl; ?>images/portfolio/OS/lookz.jpg" width="260"  height="160" />
+                    <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
+                    data-toggle="modal" data-target=".bs-example-modal-lg-os-20">Lihat Detail</button>
+                </label>
+                <div class="modal fade bs-example-modal-lg-os-20" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content" style="padding:10px;">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <img src="<?php echo $baseUrl; ?>images/portfolio/OS/lookz.jpg" />
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+
+                <label class="btn btn-default">
+                    <input type="radio" name="quality[25]" checked="checked" value="Toko Online (Luxury Furnish)" /> 
+                    <img src="<?php echo $baseUrl; ?>images/portfolio/OS/luxury_furnish.jpg" width="260"  height="160" />
+                    <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
+                    data-toggle="modal" data-target=".bs-example-modal-lg-os-21">Lihat Detail</button>
+                </label>
+                <div class="modal fade bs-example-modal-lg-os-21" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content" style="padding:10px;">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <img src="<?php echo $baseUrl; ?>images/portfolio/OS/luxury_furnish.jpg" />
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+
+                <label class="btn btn-default">
+                    <input type="radio" name="quality[25]" checked="checked" value="Toko Online (Markito)" /> 
+                    <img src="<?php echo $baseUrl; ?>images/portfolio/OS/markito.jpg" width="260"  height="160" />
+                    <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
+                    data-toggle="modal" data-target=".bs-example-modal-lg-os-22">Lihat Detail</button>
+                </label>
+                <div class="modal fade bs-example-modal-lg-os-22" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content" style="padding:10px;">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <img src="<?php echo $baseUrl; ?>images/portfolio/OS/markito.jpg" />
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+
+                <label class="btn btn-default">
+                    <input type="radio" name="quality[25]" checked="checked" value="Toko Online (Mobile Store)" /> 
+                    <img src="<?php echo $baseUrl; ?>images/portfolio/OS/mobilestore-web.jpg" width="260"  height="160" />
+                    <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
+                    data-toggle="modal" data-target=".bs-example-modal-lg-os-23">Lihat Detail</button>
+                </label>
+                <div class="modal fade bs-example-modal-lg-os-23" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content" style="padding:10px;">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <img src="<?php echo $baseUrl; ?>images/portfolio/OS/mobilestore-web.jpg" />
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+
+                <label class="btn btn-default">
+                    <input type="radio" name="quality[25]" checked="checked" value="Toko Online (N Air)" /> 
+                    <img src="<?php echo $baseUrl; ?>images/portfolio/OS/n_air.jpg" width="260"  height="160" />
+                    <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
+                    data-toggle="modal" data-target=".bs-example-modal-lg-os-24">Lihat Detail</button>
+                </label>
+                <div class="modal fade bs-example-modal-lg-os-24" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content" style="padding:10px;">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <img src="<?php echo $baseUrl; ?>images/portfolio/OS/n_air.jpg" />
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+
+                <label class="btn btn-default">
+                    <input type="radio" name="quality[25]" checked="checked" value="Toko Online (New Fashions)" /> 
+                    <img src="<?php echo $baseUrl; ?>images/portfolio/OS/new_fashions.jpg" width="260"  height="160" />
+                    <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
+                    data-toggle="modal" data-target=".bs-example-modal-lg-os-25">Lihat Detail</button>
+                </label>
+                <div class="modal fade bs-example-modal-lg-os-25" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content" style="padding:10px;">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <img src="<?php echo $baseUrl; ?>images/portfolio/OS/new_fashions.jpg" />
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+
+                <label class="btn btn-default">
+                    <input type="radio" name="quality[25]" checked="checked" value="Toko Online (New Omnis Store)" /> 
+                    <img src="<?php echo $baseUrl; ?>images/portfolio/OS/new_omnis_store.jpg" width="260"  height="160" />
+                    <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
+                    data-toggle="modal" data-target=".bs-example-modal-lg-os-26">Lihat Detail</button>
+                </label>
+                <div class="modal fade bs-example-modal-lg-os-26" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content" style="padding:10px;">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <img src="<?php echo $baseUrl; ?>images/portfolio/OS/new_omnis_store.jpg" />
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+
+                <label class="btn btn-default">
+                    <input type="radio" name="quality[25]" checked="checked" value="Toko Online (Nuevo Shop)" /> 
+                    <img src="<?php echo $baseUrl; ?>images/portfolio/OS/nuevo_shop.jpg" width="260"  height="160" />
+                    <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
+                    data-toggle="modal" data-target=".bs-example-modal-lg-os-27">Lihat Detail</button>
+                </label>
+                <div class="modal fade bs-example-modal-lg-os-27" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content" style="padding:10px;">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <img src="<?php echo $baseUrl; ?>images/portfolio/OS/nuevo_shop.jpg" />
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+
+                <?php
                 }
             }
             ?>
