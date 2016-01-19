@@ -25,6 +25,8 @@ if (isset($_POST['isiform']))
     $kepentingan = $_POST['kepentingan'];
     $jenisweb = $_POST['jenisweb'];
     $setuju = $_POST['setuju'];
+    $harga = $_POST['harga'];
+
     $uri_1 = $_POST['uri_1'];
     $uri_2 = $_POST['uri_2'];
 
@@ -34,7 +36,8 @@ if (isset($_POST['isiform']))
     
     if ($responseData->success && $_POST['setuju']==1) {
         
-    	// mysqli_query($connecDB, "INSERT INTO ");
+    	mysqli_query($connecDB, "INSERT INTO carts (id_cart, tipe_web, nama_lengkap, email, alamat, no_telp, pin_bb, kepentingan, setuju, session_id, harga, status, created, modified) 
+        VALUES ('IC404', $jenisweb','$nama','$email','$alamat','$no_telp','$pin_bb','$kepentingan','$setuju','$session_id','$harga','cart',NOW(),NOW())")or die(mysqli_error());
 
         header('Location: ../template/'.$uri_1.'/'.$uri_2.'');
 
@@ -49,4 +52,8 @@ if (isset($_POST['isiform']))
     }
 
 
+}
+if (isset($_POST['template_chose'])) {
+    $templatez = $_POST['templatez'];
+    echo $templatez;
 }

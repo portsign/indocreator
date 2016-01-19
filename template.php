@@ -42,10 +42,10 @@ if (isset($_GET['type'])) {
             <h4>Template Kategori <?php echo $tipe; ?></h4>
             <p style="margin: -10px -1px 10px;"><i>Setelah anda memilih template, anda akan menerima email berupa</i> </p><br /> 
             <p style="margin: -43px 0 10px;"><i>laporan pendaftaran Anda</i></p>
-            <button class="btn btn-primary">Submit</button><br /><br />
+            <form action="<?= $baseUrl."record" ?>" method="POST">
+            <button type="submit" name="template_chose" class="btn btn-primary">Submit</button><br /><br />
             <div class="row">
             <div class="btn-group" data-toggle="buttons">
-
 
             <?php 
                 if (isset($_GET['type'])) {
@@ -53,7 +53,7 @@ if (isset($_GET['type'])) {
             ?>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Company Profile (Torque)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Company Profile (Torque)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/CP/Torque.jpg" width="260" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-cp-1">Lihat Detail</button>
@@ -69,7 +69,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Company Profile (Acuario)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Company Profile (Acuario)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/CP/acuario.jpg" width="260" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-cp-2">Lihat Detail</button>
@@ -85,7 +85,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Company Profile (Appest)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Company Profile (Appest)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/CP/appest.jpg" width="260" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-cp-3">Lihat Detail</button>
@@ -101,7 +101,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Company Profile (Arts School)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Company Profile (Arts School)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/CP/arts-school.jpg" width="260" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-cp-4">Lihat Detail</button>
@@ -117,7 +117,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Company Profile (Auberge)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Company Profile (Auberge)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/CP/auberge.jpg" width="260" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-cp-5">Lihat Detail</button>
@@ -133,7 +133,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Company Profile (Beautyou)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Company Profile (Beautyou)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/CP/beautyou.jpg" width="260" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-cp-6">Lihat Detail</button>
@@ -149,7 +149,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Company Profile (Carrot)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Company Profile (Carrot)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/CP/carrot.jpg" width="260" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-cp-7">Lihat Detail</button>
@@ -165,7 +165,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Company Profile (Construction)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Company Profile (Construction)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/CP/construction.jpg" width="260" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-cp-8">Lihat Detail</button>
@@ -181,7 +181,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Company Profile (Dekor)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Company Profile (Dekor)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/CP/dekor.jpg" width="260" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-cp-9">Lihat Detail</button>
@@ -197,7 +197,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Company Profile (Deliccio)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Company Profile (Deliccio)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/CP/deliccio.jpg" width="260" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-cp-10">Lihat Detail</button>
@@ -213,7 +213,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Company Profile (Easy Recharge)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Company Profile (Easy Recharge)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/CP/easy_recharge.jpg" width="260" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-cp-11">Lihat Detail</button>
@@ -229,7 +229,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Company Profile (Elite Furniture)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Company Profile (Elite Furniture)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/CP/elite_furniture.jpg" width="260" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-cp-12">Lihat Detail</button>
@@ -245,7 +245,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Company Profile (Fitter)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Company Profile (Fitter)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/CP/fitter.jpg" width="260" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-cp-13">Lihat Detail</button>
@@ -261,7 +261,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Company Profile (Hallooou)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Company Profile (Hallooou)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/CP/hallooou.jpg" width="260" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-cp-14">Lihat Detail</button>
@@ -277,7 +277,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Company Profile (Home Decore)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Company Profile (Home Decore)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/CP/home_decore.jpg" width="260" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-cp-15">Lihat Detail</button>
@@ -293,7 +293,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Company Profile (Justice)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Company Profile (Justice)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/CP/justice.jpg" width="260" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-cp-16">Lihat Detail</button>
@@ -309,7 +309,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Company Profile (Legalized)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Company Profile (Legalized)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/CP/legalized.jpg" width="260" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-cp-17">Lihat Detail</button>
@@ -325,7 +325,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Company Profile (Luxus)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Company Profile (Luxus)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/CP/luxus.jpg" width="260" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-cp-18">Lihat Detail</button>
@@ -341,7 +341,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Company Profile (Motel)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Company Profile (Motel)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/CP/motel.jpg" width="260" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-cp-19">Lihat Detail</button>
@@ -357,7 +357,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Company Profile (Native Wild)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Company Profile (Native Wild)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/CP/native_wild.jpg" width="260" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-cp-20">Lihat Detail</button>
@@ -373,7 +373,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Company Profile (Residence)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Company Profile (Residence)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/CP/residence.jpg" width="260" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-cp-21">Lihat Detail</button>
@@ -389,7 +389,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Company Profile (Rugby)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Company Profile (Rugby)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/CP/rugby.jpg" width="260" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-cp-22">Lihat Detail</button>
@@ -405,7 +405,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Company Profile (Scientist)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Company Profile (Scientist)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/CP/scientist.jpg" width="260" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-cp-23">Lihat Detail</button>
@@ -421,7 +421,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Company Profile (Spasol)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Company Profile (Spasol)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/CP/spasol.jpg" width="260" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-cp-24">Lihat Detail</button>
@@ -437,7 +437,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Company Profile (Tutelage)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Company Profile (Tutelage)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/CP/tutelage.jpg" width="260" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-cp-25">Lihat Detail</button>
@@ -453,7 +453,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Company Profile (Yummy)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Company Profile (Yummy)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/CP/yummy.jpg" width="260" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-cp-26">Lihat Detail</button>
@@ -475,7 +475,7 @@ if (isset($_GET['type'])) {
                 ?>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Toko Online (E-shopper)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Toko Online (E-shopper)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/OS/E_SHOPPER.png" width="260" height="165" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-os-1">Lihat Detail</button>
@@ -491,7 +491,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Toko Online (Amberegul)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Toko Online (Amberegul)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/OS/amberegul.jpg" width="260" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-os-2">Lihat Detail</button>
@@ -507,7 +507,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Toko Online (Big Shope)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Toko Online (Big Shope)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/OS/bigshope.jpg" width="260" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-os-3">Lihat Detail</button>
@@ -523,7 +523,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Toko Online (Bike Shop)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Toko Online (Bike Shop)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/OS/bike_shop.jpg" width="260" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-os-4">Lihat Detail</button>
@@ -539,7 +539,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Toko Online (Biruang)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Toko Online (Biruang)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/OS/biruang.jpg" width="260" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-os-5">Lihat Detail</button>
@@ -555,7 +555,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Toko Online (Box Shop)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Toko Online (Box Shop)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/OS/box_shop.jpg" width="260" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-os-6">Lihat Detail</button>
@@ -571,7 +571,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Toko Online (Buy Shop)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Toko Online (Buy Shop)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/OS/buy_shop.jpg" width="260" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-os-7">Lihat Detail</button>
@@ -587,7 +587,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Toko Online (E-Shop)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Toko Online (E-Shop)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/OS/e-shop.jpg" width="260" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-os-8">Lihat Detail</button>
@@ -603,7 +603,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Toko Online (Eagle Cloths)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Toko Online (Eagle Cloths)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/OS/eaglecloths.jpg" width="260" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-os-9">Lihat Detail</button>
@@ -619,7 +619,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Toko Online (E-Shop UI Kit)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Toko Online (E-Shop UI Kit)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/OS/eshop_uikit.jpg" width="260" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-os-10">Lihat Detail</button>
@@ -635,7 +635,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Toko Online (Extro Electronics)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Toko Online (Extro Electronics)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/OS/extro-electronics-web.jpg" width="260" height="165" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-os-11">Lihat Detail</button>
@@ -651,7 +651,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Toko Online (Fashion Mania)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Toko Online (Fashion Mania)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/OS/fashion_mania.jpg" width="260" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-os-12">Lihat Detail</button>
@@ -667,7 +667,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Toko Online (Foose Shoes)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Toko Online (Foose Shoes)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/OS/fooseshoes-web.jpg" width="260"  height="160" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-os-13">Lihat Detail</button>
@@ -683,7 +683,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Toko Online (Free Style)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Toko Online (Free Style)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/OS/free_style.jpg" width="260"  height="160" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-os-14">Lihat Detail</button>
@@ -699,7 +699,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Toko Online (Gifty)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Toko Online (Gifty)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/OS/gifty.jpg" width="260"  height="160" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-os-15">Lihat Detail</button>
@@ -715,7 +715,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Toko Online (Gretong)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Toko Online (Gretong)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/OS/gretong.jpg" width="260"  height="160" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-os-16">Lihat Detail</button>
@@ -731,7 +731,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Toko Online (Home Shoppe)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Toko Online (Home Shoppe)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/OS/home_shoppe-web1.jpg" width="260"  height="160" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-os-17">Lihat Detail</button>
@@ -747,7 +747,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Toko Online (Leoshop)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Toko Online (Leoshop)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/OS/leoshop-web.jpg" width="260"  height="160" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-os-18">Lihat Detail</button>
@@ -763,7 +763,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Toko Online (Lighting)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Toko Online (Lighting)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/OS/lighting.jpg" width="260"  height="160" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-os-19">Lihat Detail</button>
@@ -779,7 +779,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Toko Online (Lookz)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Toko Online (Lookz)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/OS/lookz.jpg" width="260"  height="160" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-os-20">Lihat Detail</button>
@@ -795,7 +795,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Toko Online (Luxury Furnish)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Toko Online (Luxury Furnish)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/OS/luxury_furnish.jpg" width="260"  height="160" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-os-21">Lihat Detail</button>
@@ -811,7 +811,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Toko Online (Markito)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Toko Online (Markito)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/OS/markito.jpg" width="260"  height="160" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-os-22">Lihat Detail</button>
@@ -827,7 +827,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Toko Online (Mobile Store)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Toko Online (Mobile Store)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/OS/mobilestore-web.jpg" width="260"  height="160" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-os-23">Lihat Detail</button>
@@ -843,7 +843,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Toko Online (N Air)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Toko Online (N Air)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/OS/n_air.jpg" width="260"  height="160" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-os-24">Lihat Detail</button>
@@ -859,7 +859,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Toko Online (New Fashions)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Toko Online (New Fashions)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/OS/new_fashions.jpg" width="260"  height="160" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-os-25">Lihat Detail</button>
@@ -875,7 +875,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Toko Online (New Omnis Store)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Toko Online (New Omnis Store)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/OS/new_omnis_store.jpg" width="260"  height="160" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-os-26">Lihat Detail</button>
@@ -891,7 +891,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Toko Online (Nuevo Shop)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Toko Online (Nuevo Shop)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/OS/nuevo_shop.jpg" width="260"  height="160" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-os-27">Lihat Detail</button>
@@ -907,7 +907,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Toko Online (Shape)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Toko Online (Shape)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/OS/shape.jpg" width="260"  height="160" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-os-28">Lihat Detail</button>
@@ -923,7 +923,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Toko Online (Shop Around Big)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Toko Online (Shop Around Big)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/OS/shop-around-big.jpg" width="260"  height="160" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-os-29">Lihat Detail</button>
@@ -939,7 +939,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Toko Online (Shop Underwer)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Toko Online (Shop Underwer)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/OS/shop_underwear.jpg" width="260"  height="160" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-os-30">Lihat Detail</button>
@@ -955,7 +955,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Toko Online (Shopper Fashion)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Toko Online (Shopper Fashion)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/OS/shopper.jpg" width="260"  height="160" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-os-31">Lihat Detail</button>
@@ -971,7 +971,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Toko Online (Smart Store Web)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Toko Online (Smart Store Web)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/OS/smart-store-web.jpg" width="260"  height="160" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-os-32">Lihat Detail</button>
@@ -987,7 +987,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Toko Online (Smart Sale Web)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Toko Online (Smart Sale Web)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/OS/smart_sale-web1.jpg" width="260"  height="160" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-os-33">Lihat Detail</button>
@@ -1003,7 +1003,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Toko Online (Station Shop)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Toko Online (Station Shop)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/OS/station_shop.jpg" width="260"  height="160" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-os-34">Lihat Detail</button>
@@ -1019,7 +1019,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Toko Online (Suity)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Toko Online (Suity)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/OS/suity.jpg" width="260"  height="160" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-os-35">Lihat Detail</button>
@@ -1035,7 +1035,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Toko Online (Surfhouse)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Toko Online (Surfhouse)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/OS/surfhouse-web.jpg" width="260"  height="160" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-os-36">Lihat Detail</button>
@@ -1051,7 +1051,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Toko Online (Swim Wear)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Toko Online (Swim Wear)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/OS/swim_wear.jpg" width="260"  height="160" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-os-37">Lihat Detail</button>
@@ -1067,7 +1067,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Toko Online (Ustora)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Toko Online (Ustora)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/OS/ustora.jpg" width="260"  height="160" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-os-38">Lihat Detail</button>
@@ -1083,7 +1083,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Toko Online (Webstore)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Toko Online (Webstore)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/OS/webstore.jpg" width="260"  height="160" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-os-39">Lihat Detail</button>
@@ -1099,7 +1099,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Toko Online (Wedding Store)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Toko Online (Wedding Store)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/OS/wedding_store.jpg" width="260"  height="160" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-os-40">Lihat Detail</button>
@@ -1115,7 +1115,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Toko Online (Wing Big)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Toko Online (Wing Big)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/OS/wing-big.jpg" width="260"  height="160" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-os-41">Lihat Detail</button>
@@ -1131,7 +1131,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Toko Online (Yolk)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Toko Online (Yolk)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/OS/yolk-web.jpg" width="260"  height="160" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-os-42">Lihat Detail</button>
@@ -1151,7 +1151,7 @@ if (isset($_GET['type'])) {
                 ?>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Situs Berita / News (Great Mag)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Situs Berita / News (Great Mag)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/PB/GREAT_MAG.png" width="260"  height="160" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-pb-1">Lihat Detail</button>
@@ -1167,7 +1167,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Situs Berita / News (Duplex)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Situs Berita / News (Duplex)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/PB/duplex.jpg" width="260"  height="160" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-pb-2">Lihat Detail</button>
@@ -1183,7 +1183,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Situs Berita / News (Elegance Media)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Situs Berita / News (Elegance Media)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/PB/elegance_media.jpg" width="260"  height="160" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-pb-3">Lihat Detail</button>
@@ -1199,7 +1199,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Situs Berita / News (Info Share)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Situs Berita / News (Info Share)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/PB/info_share.jpg" width="260"  height="160" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-pb-4">Lihat Detail</button>
@@ -1215,7 +1215,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Situs Berita / News (Konstructs)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Situs Berita / News (Konstructs)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/PB/konstructs.jpg" width="260"  height="160" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-pb-5">Lihat Detail</button>
@@ -1231,7 +1231,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Situs Berita / News (Mag Blog)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Situs Berita / News (Mag Blog)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/PB/magblog1.jpg" width="260"  height="160" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-pb-6">Lihat Detail</button>
@@ -1247,7 +1247,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Situs Berita / News (Motive Mag)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Situs Berita / News (Motive Mag)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/PB/motive_mag.jpg" width="260"  height="160" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-pb-7">Lihat Detail</button>
@@ -1263,7 +1263,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Situs Berita / News (The News Reporter)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Situs Berita / News (The News Reporter)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/PB/the_news_reporter.jpg" width="260"  height="160" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-pb-8">Lihat Detail</button>
@@ -1279,7 +1279,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Situs Berita / News (View Port)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Situs Berita / News (View Port)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/PB/viewport.jpg" width="260"  height="160" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-pb-9">Lihat Detail</button>
@@ -1299,7 +1299,7 @@ if (isset($_GET['type'])) {
             ?>
             
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Iklan Baris (Boot classified)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Iklan Baris (Boot classified)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/IB/BOOTCLASSIFIED.png" width="260"  height="160" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-ib-1">Lihat Detail</button>
@@ -1315,7 +1315,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Iklan Baris (Bootstrap Bay)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Iklan Baris (Bootstrap Bay)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/IB/BOOTSTRAP_BAY.jpg" width="260"  height="160" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-ib-2">Lihat Detail</button>
@@ -1331,7 +1331,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Iklan Baris (CLASSIFIED MADE EASY)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Iklan Baris (CLASSIFIED MADE EASY)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/IB/CLASSIFIED_MADE_EASY.jpg" width="260"  height="160" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-ib-3">Lihat Detail</button>
@@ -1347,7 +1347,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Iklan Baris (Clasify)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Iklan Baris (Clasify)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/IB/CLASSIFY.png" width="260"  height="160" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-ib-4">Lihat Detail</button>
@@ -1363,7 +1363,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Iklan Baris / News (Color Labs)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Iklan Baris / News (Color Labs)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/IB/COLOR_LABS_1.png" width="260"  height="160" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-ib-5">Lihat Detail</button>
@@ -1379,7 +1379,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Iklan Baris (Flat Ads)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Iklan Baris (Flat Ads)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/IB/FLAT_ADS.jpg" width="260"  height="160" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-ib-6">Lihat Detail</button>
@@ -1395,7 +1395,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Iklan Baris (Media Center)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Iklan Baris (Media Center)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/IB/MEDIA_CENTER.jpg" width="260"  height="160" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-ib-7">Lihat Detail</button>
@@ -1411,7 +1411,7 @@ if (isset($_GET['type'])) {
                 </div>
 
                 <label class="btn btn-default">
-                    <input type="radio" name="quality[25]" checked="checked" value="Iklan Baris (Motor)" /> 
+                    <input type="radio" name="templatez" checked="checked" value="Iklan Baris (Motor)" /> 
                     <img src="<?php echo $baseUrl; ?>images/portfolio/IB/MOTOR.jpg" width="260"  height="160" />
                     <button class="btn btn-primary" style="position:absolute; margin-left:-95px;" 
                     data-toggle="modal" data-target=".bs-example-modal-lg-ib-8">Lihat Detail</button>
@@ -1430,12 +1430,13 @@ if (isset($_GET['type'])) {
                 }
             }
             ?>
+            
 
             </div>
             <br />
             <br />
-            <center><button class="btn btn-primary btn-lg">Submit</button></center>
-
+            <center><button type="submit" name="template_chose" class="btn btn-primary btn-lg">Submit</button></center>
+            </form>
             </div>
         </div>
 

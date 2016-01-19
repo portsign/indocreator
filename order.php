@@ -13,6 +13,21 @@ session_start();
         <div class="section-header">
 
         <?php 
+            if (isset($_GET['type'])) {
+                if ($_GET['type']=='success') {
+                    echo '
+                    <div class="alert alert-success" role="alert">
+                      <a href="#" class="alert-link">Selamat! Pemesanan Anda berhasil. Silahakan cek email anda untuk detail pemesanan dan pembayaran</a>
+                    </div>
+                    <center><img src="'.$baseUrl.'images/REAL_LOGO_IC.png" width="200" />
+                    <a href="'.$baseUrl.'">Kembali ke Home</a>
+                    </center>
+                    <div class="distane"></div>
+                    ';
+                } else {
+        ?>
+
+        <?php 
         if (isset($_GET['type'])) {
             if ($_GET['type']=='os') {
                 $tipe = 'Online Shop';
@@ -208,6 +223,9 @@ session_start();
                 <br />
                 <br />
             </form>
+
+            <?php } } ?>
+
         </div>
 
     </div>
