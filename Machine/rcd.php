@@ -83,6 +83,32 @@ if (isset($_POST['isiform']))
 
 }
 if (isset($_POST['template_chose'])) {
+    // require('Plugins/sendgrid-php/sendgrid.php');
+    // $sendgrid = new SendGrid('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');
+    // $mail    = new SendGrid\Email();
+    // $mail->addTo("deepinterminal@gmail.com")
+    //   ->setFrom("admin@indocreator.co.id")
+    //   ->setSubject("Sending with SendGrid is Fun")
+    //   ->setHtml("and easy to do anywhere, even with PHP");
+
+    // $sendgrid->send($mail);
+
+    // exit;
+
     $templatez = $_POST['templatez'];
-    echo $templatez;
+    $email = $_POST['email'];
+    $session_id = $_POST['session_id'];
+
+    mysqli_query($connecDB, 
+                "UPDATE carts SET 
+                template = '$templatez'
+                , session_id = 'NULL'
+                , status = 'order'
+                , modified = NOW() 
+                WHERE email = '$email' 
+                AND session_id = '$session_id'");
+    session_start();
+    session_unset();
+    session_destroy();
+    header('Location: ../order/success');
 }

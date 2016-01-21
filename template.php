@@ -43,6 +43,8 @@ if (isset($_GET['type'])) {
             <p style="margin: -10px -1px 10px;"><i>Setelah anda memilih template, anda akan menerima email berupa</i> </p><br /> 
             <p style="margin: -43px 0 10px;"><i>laporan pendaftaran Anda</i></p>
             <form action="<?= $baseUrl."record" ?>" method="POST">
+            <input type="hidden" name="session_id" value="<?= session_id(); ?>" />
+            <input type="hidden" name="email" value="<?= $_SESSION['email']; ?>" />
             <button type="submit" name="template_chose" class="btn btn-primary">Submit</button><br /><br />
             <div class="row">
             <div class="btn-group" data-toggle="buttons">

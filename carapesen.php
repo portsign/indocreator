@@ -8,23 +8,57 @@ include('navbar.php'); ?>
     <div class="container">
         <div class="section-header">
             <h2 class="section-title text-center wow fadeInDown">Cara Pemesanan</h2>
+            <p class="text-center">Ada dua macam cara pemesanan website pada IndoCreator, mengisikan formulir secara online atau <br />Mendownload Formulir Pemesanan secara menual</p>
             <br />
-            <p class="wow fadeInDown">Untuk melakukan pemesana kepada kami, silakan hubungi nomor kami <strong>089527329779</strong> atau <strong>BlackBerry Messeger</strong>, atau via <strong>Whatsapp</strong>. Bila proses pemilihan produk selesai, kirim materi web anda berupa gambar/foto, tulisan-tulisan tentang usaha anda, lalu kirim ke e-mail kami <strong>admin@indocreator.com</strong>. Setelah data lengkap kami akan mulai mengerjakan.</p>
-
-            <h4>Cara Pemesanan Website</h4>
-            <ul>
-            	<li>Mengisi Data yang dibutuhkan untuk website toko online yang dapat di Download di halaman bawah website <a href="https://indocreator.com">indocreator.com</a> dengan judul “Download Formulir” atau bisa request via bbm, whatsapp, line.</li>
-            	<li>Membayar DP 25% dari harga paket website yang anda pilih di menu <a href="harga">Harga Website. </a> pelunasan setelah website di anggap fix.</li>
-            	<li>Konfirmasi setelah melakukan pembayaran DP maupun pelunasan.</li>
-            	<li>Website akan segera kami kerjakan, lama proses pengerjaan sekitar 3-5 hari.</li>
-            </ul>
-
-            <h4>Catatan</h4>
-            <ul>
-            	<li>Setelah konfirmasi jadi dari kami, kami akan menerima beberapa revisi untuk memperbaiki kekuranganya.</li>
-            	<li>Bila klient mempunyai acuan desain dari website yang sudah ada, bukan berarti kami dapat mencontek secara persis, hal ini dikarenakan setiap jasa website memiliki desain masing-masing, namun secara fungsionalitasnya sama.</li>
-            	<li>Klient mendapatkan panduan cara editing dan panduan SEO.</li>
-            </ul>
+            <div class="panel-heading">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#tab1default" data-toggle="tab">Formulir Online</a></li>
+                    <li><a href="#tab2default" data-toggle="tab">Manual</a></li>
+                </ul>
+            </div>
+            <div class="panel-body" style="margin-top:-27.5px;">
+                <div class="tab-content">
+                    <div class="tab-pane fade in active" id="tab1default">
+                    <h4>Formulir Online</h4>
+                    <p>Dibawah ini adalah beberapa langkah cara pemesanan website pada IndoCreator</p>
+                    <ol>
+                        <li>Pilih Kategori yang anda inginkan <a href="<?php echo $baseUrl; ?>harga">http://indocreator.local/harga</a>, lalu klik tombol <strong>ORDER NOW</strong></li>
+                        <li>Isikan data lengkap anda, pastikan anda mencentang syarat dan ketentuan yang kami buat.
+                        <br /><br />
+                        <img class="thumbnail" src="<?= $baseUrl; ?>images/how_to_1.png" style="width:50%" />
+                        </li>
+                        <li>Pilih <a href="<?= $baseUrl; ?>desain">Template</a> yang anda inginkan</li>
+                        <li>Setelah itu anda akan mendapatkan email konfirmasi dari detail pemesanan anda pada <a href="<?= $baseUrl; ?>">IndoCreator</a></li>
+                        <li>Setelah anda melakukan pembayaran uang inisiasi projek dengan jumlah yang tercantum di email anda, silahkan konfirmasi kepada kami
+                            <div class="row"><br />
+                                <div class="col-md-6">
+                                    <ul>
+                                        <li><strong>Nama Bank :</strong> Bank Mandiri</li>
+                                        <li><strong>No Rekening :</strong> 1390011344250</li>
+                                        <li><strong>Atas Nama : </strong>Ghani Nafiansyah</li>
+                                    </ul>    
+                                </div>
+                                <div class="col-md-6">
+                                    <ul>
+                                        <li><strong>Nama Bank :</strong> Muamalat</li>
+                                        <li><strong>No Rekening :</strong> 5370002857</li>
+                                        <li><strong>Atas Nama :</strong> Ghani Nafiansyah</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li><br />
+                        <li>Konfirmasi Via Contact / WA : 089527329779 atau BBM : 7C1459C2</li>
+                    </ol>
+                    </div>
+                    <div class="tab-pane fade" id="tab2default">
+                    <h4>Pemesanan Manual</h4>
+                    <p>Silahkan download formulir pemesanan website dibawah ini</p><br />
+                    <center>
+                        <a href=""><h3><i class="glyphicon glyphicon-file"></i> FORMULIR_PEMESANAN_WEB_INDOCREATOR</h3></a>
+                    </center><br />
+                    </div>
+                </div>
+            </div>
         </div>
     </div>        
 </section>
