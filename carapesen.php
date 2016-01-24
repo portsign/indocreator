@@ -8,7 +8,7 @@ include('navbar.php'); ?>
     <div class="container">
         <div class="section-header">
             <h2 class="section-title text-center wow fadeInDown">Cara Pemesanan</h2>
-            <p class="text-center">Ada dua macam cara pemesanan website pada IndoCreator, mengisikan formulir secara online atau <br />Mendownload Formulir Pemesanan secara menual</p>
+            <p class="text-center">Ada dua cara pemesanan website pada <a href="<?= $baseUrl ?>">IndoCreator</a>, mengisikan formulir secara online atau <br />Mendownload Formulir Pemesanan secara menual</p>
             <br />
             <div class="panel-heading">
                 <ul class="nav nav-tabs">

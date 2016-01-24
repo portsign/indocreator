@@ -16,7 +16,8 @@ include('navbar.php'); ?>
                               <strong>Indocreator, Corp.</strong><br>
                               Jambusari Indah, Jl Jambumete No B12.<br>
                               Maguwoharjo, Depok, Sleman, Yogyakarta<br>
-                              <abbr title="Phone">P:</abbr> 089527329779<br /><br />
+                              <abbr title="Phone">P:</abbr> <strong>089527329779</strong><br>
+                              <abbr title="Pin BB">PIN BB :</abbr> <strong>7C1459C2</strong><br /><br />
 
                             <form id="main-contact-form" name="contact-form" method="post" action="#">
                                 <div class="form-group">
