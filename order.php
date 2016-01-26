@@ -17,7 +17,8 @@ session_start();
                 if ($_GET['type']=='success') {
                     echo '
                     <div class="alert alert-success" role="alert">
-                      <a href="#" class="alert-link">Selamat! Pemesanan Anda berhasil. Silahakan cek email anda untuk detail pemesanan dan pembayaran</a>
+                        <a href="#" class="alert-link">Selamat! Pemesanan Anda berhasil. Silahakan cek email anda untuk detail pemesanan dan pembayaran</a>
+                        &nbsp;<a href="'.$baseUrl.'inv/'.$_GET['id'].'" class="btn btn-default">Lihat Invoice</a>
                     </div>
                     <center><img src="'.$baseUrl.'images/REAL_LOGO_IC.png" width="200" />
                     <a href="'.$baseUrl.'">Kembali ke Home</a>

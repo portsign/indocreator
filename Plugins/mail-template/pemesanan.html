@@ -12,27 +12,27 @@
 			</center>	
 			<table style="padding:10px;">
 				<tr>
-					<td><p align="left" style="color:#888;">Dear {{nama}}, Terimakasih telah melakukan order di IndoCreator.</p></td>
+					<td><p align="left" style="color:#888;">Dear '.$nama.', Terimakasih telah melakukan order di IndoCreator.</p></td>
 				</tr>
 				<tr>
-					<td>Kami informasikan bahwa pada {{DD/MM/YYYY}} kami telah menerbitkan invoice untuk layanan IndoCreator yang Anda gunakan. Berikut informasi detailnya :<br /><br />
+					<td>Kami informasikan bahwa pada '.$nama.' kami telah menerbitkan invoice untuk layanan IndoCreator yang Anda gunakan. Berikut informasi detailnya :<br /><br />
 					</td>
 
 				</tr>
 				<tr>
-					<td>INVOICE {{#ID_INVOICE}}</td>
+					<td>INVOICE '.$id_invoice.'</td>
 				</tr>
 				<tr>
-					<td>Pemesanan Website - {{NAMA PAKET}} - 1 tahun Rp {{HARGA}}</td>
+					<td>Pemesanan Website - '.$tipeWeb.' - 1 tahun Rp '.$harga.'</td>
 				</tr>
 				<tr>
-					<td>Kode Unik Pembayaran Rp 22,00<br />------------------------------------------------------
-					<br />Sub Total: Rp 110.022,00
-					<br />Credit: Rp 0,00
-					<br />Total: Rp 110.022,00
+					<td>Kode Unik Pembayaran Rp '.$kode_unik.',00<br />------------------------------------------------------
+					<br />Sub Total: Rp '.$subtotal.',00
+					<br />Credit: Rp '.$kredit.',00
+					<br />Total: Rp '.$total.',00
 					<br /><br />
 					<i>Untuk tagihan berlangganan, keterlambatan pembayaran dapat menyebabkan layanan Anda dihentikan/disuspend secara otomatis oleh sistem. Silahkan lakukan pembayaran sebelum jatuh tempo.</i>
-					<h3>TOTAL : Rp 110.022,00</h3>
+					<h3>TOTAL : Rp '.$total.',00</h3>
 					</td>
 				</tr>
 				<tr>
