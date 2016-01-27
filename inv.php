@@ -1,5 +1,34 @@
 <?php
 require_once('Plugins/tcpdf/tcpdf.php');
+require_once('Config/Database.php');
+
+function rupiah($angka)
+{
+ 	$jadi = "Rp " . number_format($angka,2,',','.');
+	return $jadi;
+}
+
+$getID_INV = base64_decode($_GET['id']);
+$showdata = mysqli_query($connecDB, "SELECT * FROM carts WHERE id_invoice = '$getID_INV'")or die(mysqli_error());
+$x = mysqli_fetch_array($showdata);
+$nama = $x['nama_lengkap'];
+$email = $x['email'];
+$alamat = $x['alamat'];
+
+$duedate = '2016-01-27 00:57:30';
+$duedate = date('Y-m-d H:i:s', strtotime('+1 month', strtotime($duedate)));
+$duedate = date('d/m/Y', strtotime($duedate));
+$created_date = date('d/m/Y', strtotime($x['created']));
+
+$harga = rupiah($x['harga']);
+$total = rupiah($x['harga']);
+$kode_unik = rupiah(220);
+$subtotal = rupiah($x['harga']+220);
+$kredit = rupiah(0);
+$total_keseluruhan = rupiah($x['harga']+220);
+
+
+
 $pdf = new TCPDF(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false);
 $pdf->SetCreator(PDF_CREATOR);
 $pdf->SetAuthor('IndoCreator');
@@ -28,20 +57,22 @@ EOD;
 $pdf->writeHTML($tbl, true, false, false, false, '');
 $pdf->Write(0, 'Invoice #534829', '', 0, 'L', true, 0, false, false, 0);
 $pdf->SetFont('helvetica', 'B', 10);
-$pdf->Write(0, 'Invoice Date: 13/01/2016', '', 0, 'L', true, 0, false, false, 0);
+$pdf->Write(0, 'Invoice Date: '.$created_date.'', '', 0, 'L', true, 0, false, false, 0);
 $pdf->SetFont('helvetica', '', 10);
-$pdf->Write(0, 'Due Date: 20/01/2016', '', 0, 'L', true, 0, false, false, 0);
+$pdf->Write(0, 'Due Date: '.$duedate.'', '', 0, 'L', true, 0, false, false, 0);
 $pdf->Write(0, ' ', '', 0, 'L', true, 0, false, false, 0);
 
+
 $pdf->Write(0, 'Invoiced To
-IndoCreator
-ATTN: Ghani Nafiansyah
-Perum Safire Regency No B1, Jalan Budi Utomo
-Cilacap, Jawa Tengah, 53211
+'.$email.'
+ATTN: '.$nama.'
+'.$alamat.'
 Indonesia
 
 ', '', 0, 'L', true, 0, false, false, 0);
 $id = $_GET['id'];
+
+
 // -----------------------------------------------------------------------------
 $tbl = <<<EOD
 <table border="1" style="padding:10px;">
@@ -49,26 +80,25 @@ $tbl = <<<EOD
     	<td><strong>Description</strong></td>
     	<td><strong>Total</strong></td>
     </tr>
-    
     <tr>
-    	<td>Pemesanan Website - Profile Perusahaan Business - 1 tahun Rp 2500000</td>
-    	<td>Rp 110.000,00</td>
+    	<td>Pemesanan Website - Profile Perusahaan Business - 1 tahun $harga</td>
+    	<td>$total</td>
     </tr>
     <tr>
     	<td>Kode unik pembayaran</td>
-    	<td>Rp 110.022,00</td>
+    	<td>$kode_unik</td>
     </tr>
     <tr>
     	<td align="right" style="background-color:#dfdfdf;"><strong>Sub Total</strong></td>
-    	<td style="background-color:#dfdfdf;">Rp 220,00</td>
+    	<td style="background-color:#dfdfdf;">$subtotal</td>
     </tr>
     <tr>
     	<td align="right" style="background-color:#dfdfdf;"><strong>Credit</strong></td>
-    	<td style="background-color:#dfdfdf;">Rp 0,00</td>
+    	<td style="background-color:#dfdfdf;">$kredit</td>
     </tr>
     <tr>
     	<td align="right" style="background-color:#dfdfdf;"><strong>Total</strong></td>
-    	<td style="background-color:#dfdfdf;">Rp 110.022,00</td>
+    	<td style="background-color:#dfdfdf;">$total_keseluruhan</td>
     </tr>
 </table>
 <h3>Transactions</h3>
@@ -86,11 +116,11 @@ $tbl = <<<EOD
     	<td></td>
     	<td></td>
     	<td align="right"><strong>Balance</strong></td>
-    	<td><strong>Rp 110.022,00</strong></td>
+    	<td><strong>$total_keseluruhan</strong></td>
     </tr>
 </table>
 <br />
-<p align="center"><small>PDF Generated on 13/01/2016</small></p>
+<p align="center"><small>PDF Generated on $created_date</small></p>
 EOD;
 
 $pdf->writeHTML($tbl, true, false, false, false, '');
