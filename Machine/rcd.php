@@ -165,3 +165,47 @@ if (isset($_POST['subscribe'])) {
         header('Location: ../req/#captcha');
     }
 }
+
+if (isset($_POST['contactUS'])) {
+
+    $nama = $_POST['nama'];
+    $email = $_POST['email'];
+    $subject = $_POST['subject'];
+    $message = $_POST['message'];
+
+    require('../Plugins/sendgrid-php/sendgrid-php.php');
+    $sendgrid = new SendGrid('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');
+    $mail    = new SendGrid\Email();
+    $mail->addTo('nafiansyah.aqi@gmail.com')
+      ->setFrom("kontak@indocreator.co.id")
+      ->setSubject("Kontak IndoCreator")
+      ->setHtml('
+
+        <table>
+            <tr>
+                <td>Nama</td>
+                <td> : </td>
+                <td>'.$nama.'</td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td> : </td>
+                <td>'.$email.'</td>
+            </tr>
+            <tr>
+                <td>Subject</td>
+                <td> : </td>
+                <td>'.$subject.'</td>
+            </tr>
+            <tr>
+                <td>Message</td>
+                <td> : </td>
+                <td>'.$message.'</td>
+            </tr>
+        </table>
+
+        ');
+
+    $sendgrid->send($mail);
+    header('Location: ../contact/success');
+}

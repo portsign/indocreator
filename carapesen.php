@@ -54,8 +54,9 @@ include('navbar.php'); ?>
                     <h4>Pemesanan Manual</h4>
                     <p>Silahkan download formulir pemesanan website dibawah ini</p><br />
                     <center>
-                        <a href=""><h3><i class="glyphicon glyphicon-file"></i> FORMULIR_PEMESANAN_WEB_INDOCREATOR</h3></a>
+                        <a href="<?= $baseUrl ?>Files/Formulir_Pendaftaran.docx"><h3><i class="glyphicon glyphicon-file"></i> FORMULIR_PEMESANAN_WEB_INDOCREATOR</h3></a>
                     </center><br />
+                    Isi Formulir tersebut lalu kirim ke <a href="mailto:info@indocreator.co.id">info@indocreator.co.id</a>
                     </div>
                 </div>
             </div>

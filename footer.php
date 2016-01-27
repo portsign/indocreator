@@ -6,8 +6,8 @@
                 </div>
                 <div class="col-sm-6">
                     <ul class="social-icons">
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.facebook.com/Indo-Creator-240308409508222"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/IndocreatorWeb"><i class="fa fa-twitter"></i></a></li>
                         <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
                         <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
                         <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
