@@ -11,6 +11,22 @@ include('navbar.php'); ?>
                 <p class="text-center wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
             </div>
 
+
+            <?php 
+
+            $myXMLData = 'https://indocreator.co.id/blog/feed';
+            $xml=simplexml_load_file($myXMLData) or die("Error: Cannot create object");
+            $xml = json_decode(json_encode($xml), true);
+
+            // echo "<pre>";
+            foreach ($xml as $eksemel) {
+                foreach ($eksemel as $xml_items) {
+                    // print_r($xml_items);
+                }
+            }
+            // echo "</pre>";
+            ?>
+
             <div class="row">
                 <div class="col-sm-6">
                     <div class="blog-post blog-large wow fadeInLeft" data-wow-duration="300ms" data-wow-delay="0ms">
